@@ -51,6 +51,7 @@ class UserCell: UICollectionViewCell {
             }
         }
         bsText.text = userViewModel.bs
+        // Coordinates show into sea as per the data :(
         let annotation = MapAnnotation(coordinate: userViewModel.userLocation)
         mapView.addAnnotation(annotation)
         let region = MapRegionHelper.mapRegionForCoordinates(coordinates: [userViewModel.userLocation])

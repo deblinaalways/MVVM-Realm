@@ -15,13 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        DataManager().fetchUserData { (userDataResponse, error) in
-            guard error != nil else {
-                print("Success")
-                print(userDataResponse!)
-                return
-            }
-        }
+//        DataManager().fetchUserData { (userDataResponse, error) in
+//            guard error != nil else {
+//                print("Success")
+//                print(userDataResponse!)
+//                return
+//            }
+//        }
         return true
     }
 

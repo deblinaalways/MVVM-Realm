@@ -24,4 +24,13 @@ class User: Object {
     override class func primaryKey() -> String? {
         return "id"
     }
+    
+    public static func purge() {
+        let savedUsers = RealmManager.realm.objects(User.self)
+        if savedUsers.count > 0 {
+            try! RealmManager.realm.write {
+                RealmManager.realm.deleteAll()
+            }
+        }
+    }
 }

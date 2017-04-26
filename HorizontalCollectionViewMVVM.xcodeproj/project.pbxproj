@@ -12,6 +12,15 @@
 		982BFF5C1EB0746E0036858D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982BFF5A1EB0746E0036858D /* Main.storyboard */; };
 		982BFF5E1EB0746E0036858D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982BFF5D1EB0746E0036858D /* Assets.xcassets */; };
 		982BFF611EB0746E0036858D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982BFF5F1EB0746E0036858D /* LaunchScreen.storyboard */; };
+		982BFF6E1EB0782B0036858D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF6D1EB0782B0036858D /* User.swift */; };
+		982BFF701EB07A870036858D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF6F1EB07A870036858D /* Address.swift */; };
+		982BFF721EB07B900036858D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF711EB07B900036858D /* Company.swift */; };
+		982BFF751EB07D860036858D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF741EB07D860036858D /* Configuration.swift */; };
+		982BFF781EB07F4A0036858D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF771EB07F4A0036858D /* DataManager.swift */; };
+		982BFF7A1EB089A00036858D /* UserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF791EB089A00036858D /* UserResponseModel.swift */; };
+		982BFF7D1EB091670036858D /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF7C1EB091670036858D /* RealmManager.swift */; };
+		982BFF7F1EB094AA0036858D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF7E1EB094AA0036858D /* UserModel.swift */; };
+		982BFF811EB096710036858D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF801EB096710036858D /* UserViewModel.swift */; };
 		C719E91B9F49C32770D7A32C /* Pods_HorizontalCollectionViewMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B4727F888C692EB195310 /* Pods_HorizontalCollectionViewMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +34,15 @@
 		982BFF5D1EB0746E0036858D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		982BFF601EB0746E0036858D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		982BFF621EB0746E0036858D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		982BFF6D1EB0782B0036858D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		982BFF6F1EB07A870036858D /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		982BFF711EB07B900036858D /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		982BFF741EB07D860036858D /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		982BFF771EB07F4A0036858D /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		982BFF791EB089A00036858D /* UserResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserResponseModel.swift; sourceTree = "<group>"; };
+		982BFF7C1EB091670036858D /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		982BFF7E1EB094AA0036858D /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		982BFF801EB096710036858D /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		C28B4727F888C692EB195310 /* Pods_HorizontalCollectionViewMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorizontalCollectionViewMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,14 +88,87 @@
 		982BFF551EB0746E0036858D /* HorizontalCollectionViewMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				982BFF561EB0746E0036858D /* AppDelegate.swift */,
-				982BFF581EB0746E0036858D /* ViewController.swift */,
-				982BFF5A1EB0746E0036858D /* Main.storyboard */,
-				982BFF5D1EB0746E0036858D /* Assets.xcassets */,
-				982BFF5F1EB0746E0036858D /* LaunchScreen.storyboard */,
-				982BFF621EB0746E0036858D /* Info.plist */,
+				982BFF681EB077C70036858D /* Application Delegate */,
+				982BFF6A1EB077F80036858D /* Controllers */,
+				982BFF6C1EB078150036858D /* Data Model */,
+				982BFF7B1EB091550036858D /* RealmManager */,
+				982BFF761EB07F290036858D /* Data Manager */,
+				982BFF731EB07D710036858D /* Configutation */,
+				982BFF6B1EB078050036858D /* Supporting Files */,
+				982BFF691EB077E70036858D /* StoryBoard */,
 			);
 			path = HorizontalCollectionViewMVVM;
+			sourceTree = "<group>";
+		};
+		982BFF681EB077C70036858D /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				982BFF561EB0746E0036858D /* AppDelegate.swift */,
+				982BFF5F1EB0746E0036858D /* LaunchScreen.storyboard */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		982BFF691EB077E70036858D /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				982BFF5A1EB0746E0036858D /* Main.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		982BFF6A1EB077F80036858D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				982BFF581EB0746E0036858D /* ViewController.swift */,
+				982BFF7E1EB094AA0036858D /* UserModel.swift */,
+				982BFF801EB096710036858D /* UserViewModel.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		982BFF6B1EB078050036858D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				982BFF5D1EB0746E0036858D /* Assets.xcassets */,
+				982BFF621EB0746E0036858D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		982BFF6C1EB078150036858D /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				982BFF6D1EB0782B0036858D /* User.swift */,
+				982BFF711EB07B900036858D /* Company.swift */,
+				982BFF6F1EB07A870036858D /* Address.swift */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		982BFF731EB07D710036858D /* Configutation */ = {
+			isa = PBXGroup;
+			children = (
+				982BFF741EB07D860036858D /* Configuration.swift */,
+			);
+			name = Configutation;
+			sourceTree = "<group>";
+		};
+		982BFF761EB07F290036858D /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				982BFF791EB089A00036858D /* UserResponseModel.swift */,
+				982BFF771EB07F4A0036858D /* DataManager.swift */,
+			);
+			name = "Data Manager";
+			sourceTree = "<group>";
+		};
+		982BFF7B1EB091550036858D /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				982BFF7C1EB091670036858D /* RealmManager.swift */,
+			);
+			name = RealmManager;
 			sourceTree = "<group>";
 		};
 		9BCD9E22B179F577A2774D47 /* Frameworks */ = {
@@ -212,8 +303,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982BFF751EB07D860036858D /* Configuration.swift in Sources */,
+				982BFF811EB096710036858D /* UserViewModel.swift in Sources */,
 				982BFF591EB0746E0036858D /* ViewController.swift in Sources */,
+				982BFF7A1EB089A00036858D /* UserResponseModel.swift in Sources */,
 				982BFF571EB0746E0036858D /* AppDelegate.swift in Sources */,
+				982BFF781EB07F4A0036858D /* DataManager.swift in Sources */,
+				982BFF7D1EB091670036858D /* RealmManager.swift in Sources */,
+				982BFF701EB07A870036858D /* Address.swift in Sources */,
+				982BFF721EB07B900036858D /* Company.swift in Sources */,
+				982BFF7F1EB094AA0036858D /* UserModel.swift in Sources */,
+				982BFF6E1EB0782B0036858D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +479,7 @@
 				982BFF671EB0746E0036858D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,9 +12,12 @@
 		982BFF5C1EB0746E0036858D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982BFF5A1EB0746E0036858D /* Main.storyboard */; };
 		982BFF5E1EB0746E0036858D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982BFF5D1EB0746E0036858D /* Assets.xcassets */; };
 		982BFF611EB0746E0036858D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982BFF5F1EB0746E0036858D /* LaunchScreen.storyboard */; };
+		C719E91B9F49C32770D7A32C /* Pods_HorizontalCollectionViewMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B4727F888C692EB195310 /* Pods_HorizontalCollectionViewMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CE7C7AC9A72EE9146092611 /* Pods-HorizontalCollectionViewMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalCollectionViewMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalCollectionViewMVVM/Pods-HorizontalCollectionViewMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		4123DF0D042A33DB8A1B0E4E /* Pods-HorizontalCollectionViewMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalCollectionViewMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalCollectionViewMVVM/Pods-HorizontalCollectionViewMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		982BFF531EB0746E0036858D /* HorizontalCollectionViewMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalCollectionViewMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		982BFF561EB0746E0036858D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		982BFF581EB0746E0036858D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		982BFF5D1EB0746E0036858D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		982BFF601EB0746E0036858D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		982BFF621EB0746E0036858D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28B4727F888C692EB195310 /* Pods_HorizontalCollectionViewMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorizontalCollectionViewMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C719E91B9F49C32770D7A32C /* Pods_HorizontalCollectionViewMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		322C1F36132C4D11CE739802 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7C7AC9A72EE9146092611 /* Pods-HorizontalCollectionViewMVVM.debug.xcconfig */,
+				4123DF0D042A33DB8A1B0E4E /* Pods-HorizontalCollectionViewMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		982BFF4A1EB0746E0036858D = {
 			isa = PBXGroup;
 			children = (
 				982BFF551EB0746E0036858D /* HorizontalCollectionViewMVVM */,
 				982BFF541EB0746E0036858D /* Products */,
+				322C1F36132C4D11CE739802 /* Pods */,
+				9BCD9E22B179F577A2774D47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = HorizontalCollectionViewMVVM;
 			sourceTree = "<group>";
 		};
+		9BCD9E22B179F577A2774D47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C28B4727F888C692EB195310 /* Pods_HorizontalCollectionViewMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 982BFF651EB0746E0036858D /* Build configuration list for PBXNativeTarget "HorizontalCollectionViewMVVM" */;
 			buildPhases = (
+				DD398D15CB721E9B5CD80E5C /* [CP] Check Pods Manifest.lock */,
 				982BFF4F1EB0746E0036858D /* Sources */,
 				982BFF501EB0746E0036858D /* Frameworks */,
 				982BFF511EB0746E0036858D /* Resources */,
+				062F5D95A5E1D790D907C9EE /* [CP] Embed Pods Frameworks */,
+				A847DE475A22EA0D709CA950 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		062F5D95A5E1D790D907C9EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HorizontalCollectionViewMVVM/Pods-HorizontalCollectionViewMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A847DE475A22EA0D709CA950 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HorizontalCollectionViewMVVM/Pods-HorizontalCollectionViewMVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD398D15CB721E9B5CD80E5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		982BFF4F1EB0746E0036858D /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		982BFF661EB0746E0036858D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE7C7AC9A72EE9146092611 /* Pods-HorizontalCollectionViewMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 374A5BSW36;
@@ -272,6 +348,7 @@
 		};
 		982BFF671EB0746E0036858D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4123DF0D042A33DB8A1B0E4E /* Pods-HorizontalCollectionViewMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 374A5BSW36;

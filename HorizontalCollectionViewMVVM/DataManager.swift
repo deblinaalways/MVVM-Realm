@@ -18,8 +18,6 @@ enum DataManagerError: Error {
     case invalidResponse
 }
 
-typealias UserAddress = [String: JSON]
-typealias UserCompany = [String: JSON]
 typealias UserDataCompletion = (Results<User>?, DataManagerError?) -> ()
 
 class DataManager {

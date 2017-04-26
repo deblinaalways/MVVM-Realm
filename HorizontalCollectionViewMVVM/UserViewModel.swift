@@ -17,7 +17,13 @@ class UserViewModel {
     var nameText: String { return user.name }
     var userNameText: String { return user.username }
     var emailText: String { return user.email }
-    var phoneText: String { return "\(user.phone)" + " Ex\(user.phoneExtn)"}
+    var phoneText: String {
+        if !user.phoneExtn.isEmpty {
+            return "\(user.phone)" + " Ex \(user.phoneExtn)"
+        } else {
+            return "\(user.phone)"
+        }
+    }
     var websiteText: String { return user.website }
     
     var street: String {

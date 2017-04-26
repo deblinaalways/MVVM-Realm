@@ -44,8 +44,11 @@ class UserCell: UICollectionViewCell {
         websiteText.text = userViewModel.websiteText
         companyNameText.text = userViewModel.companyNameText
         catchPhrase.text = ""
+        var index = 0
         for phrase in userViewModel.catchPhraseArray {
-            catchPhrase.text = catchPhrase.text! + ", " + phrase
+            if index == 0 { catchPhrase.text = phrase; index = index + 1 } else {
+                catchPhrase.text = catchPhrase.text! + ", " + phrase
+            }
         }
         bsText.text = userViewModel.bs
         let annotation = MapAnnotation(coordinate: userViewModel.userLocation)

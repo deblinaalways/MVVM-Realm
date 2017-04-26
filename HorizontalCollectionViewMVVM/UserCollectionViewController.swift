@@ -21,7 +21,9 @@ class UserCollectionViewController: UIViewController {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         users = RealmManager.realm.objects(User.self)
-        if users.count == 0 || users == nil {
+        pageControl.numberOfPages = users.count
+        pageControl.currentPage = 0
+        if users.count == 0 || users == nil { //Data is fetched from server only once
             fetchUserDataAndReload()
         }
     }
@@ -45,8 +47,11 @@ class UserCollectionViewController: UIViewController {
 
 extension UserCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int { return 1 }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { return users.count }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        pageControl.numberOfPages = users.count
+        return users.count }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        pageControl.currentPage = indexPath.row - 1
         let userCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! UserCell
         let userViewModel = UserViewModel(user: users[indexPath.row])
         userCell.configure(with: userViewModel)

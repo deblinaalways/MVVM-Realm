@@ -21,6 +21,8 @@
 		982BFF7D1EB091670036858D /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF7C1EB091670036858D /* RealmManager.swift */; };
 		982BFF7F1EB094AA0036858D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF7E1EB094AA0036858D /* UserModel.swift */; };
 		982BFF811EB096710036858D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF801EB096710036858D /* UserViewModel.swift */; };
+		982BFF831EB0A8CF0036858D /* UserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF821EB0A8CF0036858D /* UserCollectionViewController.swift */; };
+		982BFF861EB0AAAE0036858D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BFF851EB0AAAE0036858D /* UserCell.swift */; };
 		C719E91B9F49C32770D7A32C /* Pods_HorizontalCollectionViewMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B4727F888C692EB195310 /* Pods_HorizontalCollectionViewMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		982BFF7C1EB091670036858D /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		982BFF7E1EB094AA0036858D /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		982BFF801EB096710036858D /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		982BFF821EB0A8CF0036858D /* UserCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewController.swift; sourceTree = "<group>"; };
+		982BFF851EB0AAAE0036858D /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		C28B4727F888C692EB195310 /* Pods_HorizontalCollectionViewMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorizontalCollectionViewMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,9 +124,11 @@
 		982BFF6A1EB077F80036858D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				982BFF821EB0A8CF0036858D /* UserCollectionViewController.swift */,
 				982BFF581EB0746E0036858D /* ViewController.swift */,
 				982BFF7E1EB094AA0036858D /* UserModel.swift */,
 				982BFF801EB096710036858D /* UserViewModel.swift */,
+				982BFF841EB0AA990036858D /* User Cell */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +175,14 @@
 				982BFF7C1EB091670036858D /* RealmManager.swift */,
 			);
 			name = RealmManager;
+			sourceTree = "<group>";
+		};
+		982BFF841EB0AA990036858D /* User Cell */ = {
+			isa = PBXGroup;
+			children = (
+				982BFF851EB0AAAE0036858D /* UserCell.swift */,
+			);
+			name = "User Cell";
 			sourceTree = "<group>";
 		};
 		9BCD9E22B179F577A2774D47 /* Frameworks */ = {
@@ -304,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				982BFF751EB07D860036858D /* Configuration.swift in Sources */,
+				982BFF861EB0AAAE0036858D /* UserCell.swift in Sources */,
 				982BFF811EB096710036858D /* UserViewModel.swift in Sources */,
 				982BFF591EB0746E0036858D /* ViewController.swift in Sources */,
 				982BFF7A1EB089A00036858D /* UserResponseModel.swift in Sources */,
@@ -314,6 +329,7 @@
 				982BFF721EB07B900036858D /* Company.swift in Sources */,
 				982BFF7F1EB094AA0036858D /* UserModel.swift in Sources */,
 				982BFF6E1EB0782B0036858D /* User.swift in Sources */,
+				982BFF831EB0A8CF0036858D /* UserCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

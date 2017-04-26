@@ -32,5 +32,7 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>Fetch User URL</key>
+	<string>https://jsonplaceholder.typicode.com/users</string>
 </dict>
 </plist>

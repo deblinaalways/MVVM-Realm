@@ -26,14 +26,32 @@ class UserCell: UICollectionViewCell {
     @IBOutlet var catchPhrase: UILabel!
     @IBOutlet var bsText: UILabel!
     
-    private(set) var user: User!
-    func configure(with user: User) {
-        self.user = user
+    private(set) var userViewModel: UserViewModel!
+    func configure(with userViewModel: UserViewModel) {
+        self.userViewModel = userViewModel
         configureUI()
     }
     
     private func configureUI() {
-        
+        nameText.text = userViewModel.nameText
+        userNameText.text = userViewModel.userNameText
+        emailText.text = userViewModel.emailText
+        streetText.text = userViewModel.street
+        suiteText.text = userViewModel.suit
+        cityText.text = userViewModel.city
+        zipText.text = userViewModel.zipcode
+        phoneText.text = userViewModel.phoneText
+        websiteText.text = userViewModel.websiteText
+        companyNameText.text = userViewModel.companyNameText
+        catchPhrase.text = ""
+        for phrase in userViewModel.catchPhraseArray {
+            catchPhrase.text = catchPhrase.text! + ", " + phrase
+        }
+        bsText.text = userViewModel.bs
+        let annotation = MapAnnotation(coordinate: userViewModel.userLocation)
+        mapView.addAnnotation(annotation)
+        let region = MapRegionHelper.mapRegionForCoordinates(coordinates: [userViewModel.userLocation])
+        mapView.setRegion(region!, animated: true)
     }
     
 }
